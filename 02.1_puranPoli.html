@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            
+            background-color: #fff5eb;
+            padding: 20px;
+        }
+
+
+        .navigation {
+            margin-bottom: 80px;  /* Added spacing after navigation */
+        }
+        
+        .recipe-header {
+            background-color: #001f3f;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            border-radius: 15px;
+            margin: 1rem auto;
+            max-width: 1200px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            
+        }
+        .recipe-header h1 {
+            font-size: 2.5rem;
+            font-family: 'Times New Roman', serif;
+        }
+
+        .recipe-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .ingredients-section {
+           
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .ingredients-title {
+            color: #001f3f;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            grid-column: 1 / -1;
+        }
+
+        .ingredients-list {
+            margin-bottom: 1.5rem;
+            
+        }
+
+        .ingredients-list h3 {
+            color: #001f3f;
+            margin-bottom: 0.5rem;
+        }
+
+        .ingredients-list ul {
+            list-style-position: inside;
+            padding-left: 1rem;
+        }
+
+        .ingredients-list li {
+            margin-bottom: 0.5rem;
+            line-height: 1.4;
+        }
+
+        .recipe-image {
+            float: right;
+            max-width: 300px;
+            margin: 0 0 1rem 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .steps-section {
+            clear: both;
+            margin-top: 2rem;
+        }
+
+        .steps-title {
+            color: #001f3f;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .steps-list {
+            list-style-position: inside;
+            padding-left: 1.5rem;
+        }
+
+        .steps-list li {
+            list-style-position: inside;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #001f3f;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 2px 2px 5px black;
+            z-index: 1000;
+            transition: transform 0.2s;
+        }
+
+        .back-button:hover {
+            transform: scale(1.05);
+            background-color: #002952;
+        }
+
+        .sub-steps {
+            list-style-type: disc; /* Use bullets for the sub-steps */
+            padding-left: 20px; /* Indent the sub-steps */
+            margin-bottom: 10px;
+        }
+        
+        .sub-steps li {
+            margin-bottom: 5px; /* Space between sub-steps */
+        }
+        
+        /* Optional: Style the list markers further */
+        .steps-list > li::marker {
+            font-weight: bold; /* Make main step numbers bold */
+            color: #333; /* Example color */
+        }
+        
+        .sub-steps li::marker {
+            color: black /* Example color for bullets */
+        }
+        
+
+        @media screen and (max-width: 768px) {
+            .recipe-container {
+                padding: 1rem;
+            }
+
+            .recipe-image {
+                float: none;
+                display: block;
+                margin: 1rem auto;
+                max-width: 100%;
+            }
+
+            .ingredients-section {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation"></div>
+    <button class="back-button" onclick="window.location.href='02.0_Maharashtrian food.html'">← Back Maharashtrian food</button>
+    </div>
+
+    <div class="recipe-header">
+        <h1 >Puran Poli Recipe</h1>
+    </div>
+
+    <div class="recipe-container">
+        <img src="./img/puranpoli.webp" alt="Puran Poli" class="recipe-image">
+
+        <h2 class="ingredients-title">Ingredients</h2>
+        <div class="ingredients-section">
+            <div class="ingredients-list">
+                <h3>For the Dough:</h3>
+                <ul >
+                    <li>Wheat flour (Atta) - 1 cup</li>
+                    <li>Maida (All-purpose flour) - 1 cup</li>
+                    <li>Turmeric powder - ¼ tsp</li>
+                    <li>Salt - a pinch</li>
+                    <li>Oil/Ghee - 2 tbsp</li>
+                    <li>Water - as needed</li>
+                </ul>
+            </div>
+
+            <div class="ingredients-list">
+                <h3>For the Filling (Puran):</h3>
+                <ul>
+                    <li>Chana dal (Split Bengal gram) - 1 cup</li>
+                    <li>Jaggery - 1 cup (adjust sweetness as needed)</li>
+                    <li>Cardamom powder - ½ tsp</li>
+                    <li>Nutmeg powder - a pinch (optional)</li>
+                    <li>Ghee - 1 tbsp</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="steps-section">
+            <h2 class="steps-title">Preparation Steps</h2>
+            <ol class="steps-list">
+                <li>Prepare the Dough:
+                    <ul class="sub-steps">
+                        <li>Mix wheat flour, maida, turmeric powder, and salt in a bowl.</li>
+                        <li>Add oil/ghee and mix well until crumbly.</li>
+                        <li>Gradually add water to form a soft, pliable dough. Cover and let it rest for 30 minutes.</li>
+                    </ul>
+                </li>
+                <li>Cook the Chana Dal:
+                    <ul class="sub-steps">
+                        <li>Wash and soak chana dal for 30 minutes.</li>
+                        <li>Pressure cook the dal with water (just enough to cover the dal) for 3-4 whistles or until soft but not mushy.</li>
+                        <li>Drain excess water and let the dal cool.</li>
+                    </ul>
+                </li>
+                <li>Make the Puran (Filling):
+                    <ul class="sub-steps">
+                        <li>Mash the cooked dal or blend it in a mixer for a smooth paste.</li>
+                        <li>In a pan, melt jaggery on low heat. Add the mashed dal and mix well.</li>
+                        <li>Cook on medium heat, stirring continuously, until the mixture thickens and leaves the sides of the pan.</li>
+                        <li>Add cardamom and nutmeg powder. Mix well and let it cool.</li>
+                    </ul>
+                </li>
+                <li>Assemble the Puran Poli:
+                    <ul class="sub-steps">
+                        <li>Divide the dough into equal balls and roll them out into small circles.</li>
+                        <li>Place a portion of the puran mixture in the center and pleat the edges to seal.</li>
+                        <li>Roll it out gently into a thin, round shape (6-8 inches).</li>
+                    </ul>
+                </li>
+                <li>Cook the Puran Poli:
+                    <ul class="sub-steps">
+                        <li>Heat a tawa or flat pan. Cook the rolled puran poli on medium heat.</li>
+                        <li>Apply ghee and flip, cooking both sides until golden brown spots appear.</li>
+                    </ul>
+                </li>
+                <li>Serve Hot:
+                    <ul class="sub-steps">
+                        <li>Serve warm with a dollop of ghee, milk, or even amti (spiced dal curry).</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </div>
+    
+</body>
+</html>
