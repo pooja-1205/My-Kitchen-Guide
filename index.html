@@ -4,26 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-    <title>My Kichen Guide</title>
+    <title>My Kitchen Guide</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg p-0">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container">
             <!-- Logo -->
             <a class="navbar-brand" href="#">
-                <img src="./img/logo.png" alt="My Kitchen Logo">
+                <img src="./img/logo.png" alt="My Kitchen Logo" class="img-fluid">
             </a>
 
             <!-- Mobile Toggle Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -31,24 +35,18 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link active" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">Menu</a>
-                    </li> -->
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">Pages</a>
-                    </li> -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
 
                 <!-- Social Media Icons -->
-                <div class="social-icons">
+                <div class="social-icons d-none d-lg-block">
                     <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
@@ -58,179 +56,291 @@
         </div>
     </nav>
 
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-11">
-                <div class="hero-container">
-                    <h1 class="hero-title">Hey there, food lover!</h1>
-                    <div class="title-underline"></div>
-                    <p class="hero-subtitle">Ready to create magic in the kitchen? Explore simple, flavorful, and
-                        exciting recipes to satisfy every craving.</p>
+    <!-- Hero Section -->
+    <section class="hero-section py-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-md-11 col-sm-12">
+                    <div class="hero-container">
+                        <h1 class="hero-title">Hey there, food lover!</h1>
+                        <div class="title-underline"></div>
+                        <p class="hero-subtitle">Ready to create magic in the kitchen? Explore simple, flavorful, and
+                            exciting recipes to satisfy every craving.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Cuisine Circles Section -->
-    <div class="container cuisine-container">
-        <div class="row text-center">
-            <!-- Maharashtrian Cuisine -->
-            <div class="col-md-3 col-sm-6 mb-4">
-                <a href="02.0_Maharashtrian food.html">
-                    <div class="cuisine-circle">
-                        <img src="./img/Maharashtrian.png" alt="Maharashtrian food">
-                    </div>
-                    <h3 class="cuisine-title">Maharashtrian</h3>
-                </a>
-            </div>
+    <section class="cuisine-section py-5">
+        <div class="container">
+            <div class="row text-center">
+                <!-- Maharashtrian Cuisine -->
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                    <a href="02.0_Maharashtrian food.html" class="cuisine-link">
+                        <div class="cuisine-circle">
+                            <img src="./img/Maharashtrian.png" alt="Maharashtrian food" class="img-fluid">
+                        </div>
+                        <h3 class="cuisine-title">Maharashtrian</h3>
+                    </a>
+                </div>
 
-            <!-- South Indian Cuisine -->
-            <div class="col-md-3 col-sm-6 mb-4">
-                <a href="03.0_South Indian.html">
-                    <div class="cuisine-circle">
-                        <img src="./img/South Indian.png" alt="South Indian">
-                    </div>
-                    <h3 class="cuisine-title">South Indian</h3>
-                </a>
-            </div>
+                <!-- South Indian Cuisine -->
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                    <a href="03.0_South Indian.html" class="cuisine-link">
+                        <div class="cuisine-circle">
+                            <img src="./img/South Indian.png" alt="South Indian" class="img-fluid">
+                        </div>
+                        <h3 class="cuisine-title">South Indian</h3>
+                    </a>
+                </div>
 
-            <!-- Punjabi Cuisine -->
-            <div class="col-md-3 col-sm-6 mb-4">
-                <a href="04.0_Punjabi.html">
-                    <div class="cuisine-circle">
-                        <img src="./img/Punjabi.png" alt="Punjabi">
-                    </div>
-                    <h3 class="cuisine-title">Punjabi</h3>
-                </a>
-            </div>
+                <!-- Punjabi Cuisine -->
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                    <a href="04.0_Punjabi.html" class="cuisine-link">
+                        <div class="cuisine-circle">
+                            <img src="./img/Punjabi.png" alt="Punjabi" class="img-fluid">
+                        </div>
+                        <h3 class="cuisine-title">Punjabi</h3>
+                    </a>
+                </div>
 
-            <!-- Gujarati Cuisine -->
-            <div class="col-md-3 col-sm-6 mb-4">
-                <a href="05.0_Gujarati.html">
-                    <div class="cuisine-circle">
-                        <img src="./img/Gujarati.png" alt="Gujarati">
-                    </div>
-                    <h3 class="cuisine-title">Gujarati</h3>
-                </a>
+                <!-- Gujarati Cuisine -->
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                    <a href="05.0_Gujarati.html" class="cuisine-link">
+                        <div class="cuisine-circle">
+                            <img src="./img/Gujarati.png" alt="Gujarati" class="img-fluid">
+                        </div>
+                        <h3 class="cuisine-title">Gujarati</h3>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="whitebg m-3">
+    <!-- About Section -->
+    <section id="about" class="about-section py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <div class="image-container">
-                        <img src="./img/Gujarati.png" alt="Background" class="img-fluid rounded">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="image-container position-relative">
+                        <img src="./img/Gujarati.png" alt="Background" class="img-fluid rounded main-image">
                         <img src="./img/Punjabi.png" alt="Overlay" class="overlay-image">
                     </div>
                 </div>
-                <div class="col-12 col-md-6 aboutText mx-auto">
-                    <h1>Something Healthy <br> Something Tasty</h1>
-                    <p>Recipe Haven is your one-stop destination for authentic Indian recipes. We offer a vast
-                        collection of meticulously researched and tested dishes from across India, complete with
-                        easy-to-follow instructions and beautiful photos. Join our community of food lovers to share
-                        your culinary creations and get expert support. Plus, we're constantly adding new recipes to
-                        keep your cooking experience fresh and exciting.</p>
-                    <button>More About Us</button>
+                <div class="col-lg-6">
+                    <div class="aboutText">
+                        <h1>Something Healthy <br> Something Tasty</h1>
+                        <p>Recipe Haven is your one-stop destination for authentic Indian recipes. We offer a vast
+                            collection of meticulously researched and tested dishes from across India, complete with
+                            easy-to-follow instructions and beautiful photos. Join our community of food lovers to share
+                            your culinary creations and get expert support. Plus, we're constantly adding new recipes to
+                            keep your cooking experience fresh and exciting.</p>
+                        <button class="about-btn">More About Us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="contact-container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="contact-info">
+                            <h2>Contact Us</h2>
+                            <ul class="info-list">
+                                <li class="info-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <div>
+                                        <strong>Email</strong><br>
+                                        hello@recipehaven.com
+                                    </div>
+                                </li>
+                                <li class="info-item">
+                                    <i class="fas fa-phone"></i>
+                                    <div>
+                                        <strong>Phone</strong><br>
+                                        +123-456-7890
+                                    </div>
+                                </li>
+                                <li class="info-item">
+                                    <i class="fas fa-globe"></i>
+                                    <div>
+                                        <strong>Website</strong><br>
+                                        www.recipehaven.com
+                                    </div>
+                                </li>
+                                <li class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div>
+                                        <strong>Location</strong><br>
+                                        123 Anywhere St., Any City
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="contact-form">
+                            <h3 class="form-title">Get in touch.</h3>
+                            <form id="contactForm">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <input type="text" class="form-control" placeholder="First Name" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <input type="text" class="form-control" placeholder="Last Name" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Email Address" required>
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" placeholder="Message" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="submit-btn">SUBMIT</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-4 text-center text-md-start">
+                    <img src="./img/logo.png" alt="My Kitchen Logo" class="footer-logo img-fluid">
+                </div>
+                <div class="col-md-4 text-center py-3 py-md-0">
+                    <p class="mb-0">&copy; 2025 Recipe Haven. All rights reserved.</p>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+
+    <!-- Footer Section -->
+<footer class="footer-section py-5 bg-white">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Logo and About Column -->
+            <div class="col-lg-4 col-md-6">
+                <div class="footer-content">
+                    <a href="index.html" class="footer-logo d-block mb-3">
+                        <img src="./img/logo.png" alt="My Kitchen Guide" class="img-fluid" style="max-width: 200px;">
+                    </a>
+                    <p class="text-muted mb-4">
+                        Welcome to Recipe Haven - your one-stop destination for authentic Indian recipes. 
+                        We offer meticulously researched dishes from across India with easy-to-follow instructions.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-circle"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-circle"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-circle"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-circle"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Links Column -->
+            <div class="col-lg-2 col-md-6">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#">Popular Recipes</a></li>
+                    <li><a href="#">Latest Articles</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Instagram Feed Column -->
+            <div class="col-lg-6 col-md-12">
+                <h4 class="footer-title">Follow Us On Instagram</h4>
+                <div class="instagram-feed">
+                    <div class="row g-2">
+                        <div class="col-3 col-md-3">
+                            <a href="#" class="insta-img">
+                                <img src="./img/Dietary Preferences.jpg" alt="Food Image" class="img-fluid rounded">
+                            </a>
+                        </div>
+                        <div class="col-3 col-md-3">
+                            <a href="#" class="insta-img">
+                                <img src="./img/Pav Bhaji.jpg" alt="Food Image" class="img-fluid rounded">
+                            </a>
+                        </div>
+                        <div class="col-3 col-md-3">
+                            <a href="#" class="insta-img">
+                                <img src="./img/Misal Pav.jpg" alt="Food Image" class="img-fluid rounded">
+                            </a>
+                        </div>
+                        <div class="col-3 col-md-3">
+                            <a href="#" class="insta-img">
+                                <img src="./img/Ukdiche Modak.jpg" alt="Food Image" class="img-fluid rounded">
+                            </a>
+                        </div>
+                        <div class="col-3 col-md-3">
+                            <a href="#" class="insta-img">
+                                <img src="./img/South Indian.png" alt="Food Image" class="img-fluid rounded">
+                            </a>
+                        </div>
+                        <div class="col-3 col-md-3">
+                            <a href="#" class="insta-img">
+                                <img src="./img/Thalipitth.jpg" alt="Food Image" class="img-fluid rounded">
+                            </a>
+                        </div>
+                        <div class="col-3 col-md-3">
+                            <a href="#" class="insta-img">
+                                <img src="./img/bharliVangi.jpg" alt="Food Image" class="img-fluid rounded">
+                            </a>
+                        </div>
+                        <div class="col-3 col-md-3">
+                            <a href="#" class="insta-img">
+                                <img src="./img/Meal Types.webp" alt="Food Image" class="img-fluid rounded">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="copyright text-center border-top pt-4">
+                    <p class="mb-0">Copyright © 2025 Recipe Haven. All Rights Reserved</p>
                 </div>
             </div>
         </div>
     </div>
+</footer>
 
-    <!-- contact section -->
-
-        <section class="contact-section" id="contact">
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h2>Contact Us</h2>
-                    <ul class="info-list">
-                        <li class="info-item">
-                            <i>📧</i>
-                            <div>
-                                <strong>Email</strong><br>
-                                hello@recipehaven.com
-                            </div>
-                        </li>
-                        <li class="info-item">
-                            <i>📞</i>
-                            <div>
-                                <strong>Phone</strong><br>
-                                +123-456-7890
-                            </div>
-                        </li>
-                        <li class="info-item">
-                            <i>🌐</i>
-                            <div>
-                                <strong>Website</strong><br>
-                                www.recipehaven.com
-                            </div>
-                        </li>
-                        <li class="info-item">
-                            <i>📍</i>
-                            <div>
-                                <strong>Location</strong><br>
-                                123 Anywhere St., Any City
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-    
-                <div class="contact-form">
-                    <h3 class="form-title">Get in touch.</h3>
-                    <form id="contactForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="First Name" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Last Name" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email Address" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" placeholder="Message" required></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">SUBMIT</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    
-
-        
-        <script>
-            document.getElementById('contactForm').addEventListener('submit', function(e) {
-                e.preventDefault();
-                // Add your form submission logic here
-                alert('Form submitted successfully!');
-            });
-        </script>
-
-          <!-- script -->
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
-
-        hamburger.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
-    </script>
-
-    
-
-    
-  
+    <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
-        integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-
+    <!-- Form Submission Script -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            // Add your form submission logic here
+            alert('Form submitted successfully!');
+        });
+    </script>
 </body>
 
 </html>
